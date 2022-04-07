@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Us Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+
+        <script>
+          function validateForm(){
+            if(document.forms[0].fname.value == ""){
+              alert("First name filed cannot empty");
+              return false;
+            }
+            if(document.forms[0].lname.value == ""){
+              alert("Last name filed cannot empty");
+              return false;
+            }
+          }
+        </script>
+    </head>
+    <body>
+        <div class="navigation"><nav><a href="index.html"><img src="receipe/receipepic/image_3.png" alt="Logo of Maggi Group"></a>
+        <div class="navi"><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a></div></nav></div>
+
+        <div class="container">
+            <form onsubmit="validateForm();">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="usa">Malaysia</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+        <footer class="last">
+            <img src="receipe/receipepic/image_3.png" class="logo1" alt="Logo of Maggi Group">
+                <h2 class="Maggi">About Maggi</h2>
+                <br>
+                <p class="linking">Links<br><a href="facebook">facebook</a>&nbsp;<a href="instragram">instragram</a>&nbsp;<a href="index.html">Home</a>&nbsp;<a href="about.html">About Us</a>&nbsp;<a href="contact.html">Contact Us</a></p>
+                <img src="receipe/receipepic/Rectangle_7.png" class="socialmedia1" alt="Instagram Icon"><img src="receipe/receipepic/Rectangle_8.png" class="socialmedia2" alt="Facebook Icon">
+                <div class="container8">
+                <p>1884:Company originated in Switzerland;Julies Maggie took over his father's mill.</p>
+                <p>1886:Followed up with a ready-made soup based on legume meals</p>
+                <p>1897:Julius Maggi founded the company Maggi GmbH in Singen, Germany</p>
+                <p>1947:Maggi's holding company merged with th eNestle company to form Nestle-Alimentana S.A, currently known in its francophone home base as Nestle S.A</p>
+                </div>
+          </footer>
+        
+    </body>
+</html>

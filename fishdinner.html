@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dinner Fish Receipe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mainpage.css">
+  </head>
+  <body>
+    
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+  <div class="container1">
+    <a href="index.html"><img src="foodimage/image_3.png" class="logo" alt="Logo of Maggi"></a>
+    <nav><a href="index.html">Chicken</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="fishbreakfast.html">Fish</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="beefbreakfast.html">Beef</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ricebreakfast.html">Rice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="noodlesbreakfast.html">Noodles</a></nav>
+    </div>
+    <ul>
+      <li><a href="fishbreakfast.html">Breakfast</a></li>
+      <li><a href="fishlunch.html">Lunch</a></li>
+      <li><a href="fishdinner.html">Dinner</a></li>
+    </ul> 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div id="backgroundcontainer">
+    <div class="numbertext">1 / 2</div>
+    <img src="foodimage/steamedgrouper.png" alt="Picture of Steamed Grouper">
+    <div class="text">
+      <h2>Steam Grouper Fish</h2>
+      <p>Fish that is steamed to perfection, accompanied by a delightfully healthy soup. This easy receipe allows you to make one of the hardest dishes in asian cooking as easy as blinking with the help of MAGGI products.<br><br>Follow this receipe to a delicous steam grouper.</p>
+      <div class="recipebutton"><a href="receipe/SteamGrouperFish.html">Recipe</a></div>
+    </div>
+    <div class="nutrition">
+      <h3>Nutritional Value</h3>
+      <table class="center">
+        <tr>
+          <th>Calories</th>
+          <th>Protein</th>
+          <th>Carbs</th>
+          <th>Fats</th>
+        </tr>
+        <tr>
+          <td>312.53 kcal</td>
+          <td>35.83 g</td>
+          <td>17.59 g</td>
+          <td>12.57 g</td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="foodimage/sweetsour.jpg" alt="Picture of Sweet and Sour Fish">
+    <div class="text">
+      <h2>Sweet and Sour Fish</h2>
+      <p>Have you ever wondered why fish dishes are mostly cooked and served whole (head and tail intact) in Chinese restaurants? It is a symbolic significance of good luck and abundance. These days, you can find an abundance of steamed and fried fish recipes online to enjoy restaurant-style fish in the comfort of your own home!<br><br>No matter what your cooking method is, be it steaming the fish to retain the silky, smooth texture of the meat or fry it for a light, crunchy outer skin; the sauce is one of the most important elements to make a fish taste good.
+        Miss dining out at restaurants? <br><br>Feast at home with this simple sweet and sour fish recipe that combines sweet and savoury that could whet anyone’s appetite!</p>
+        <div class="recipebutton"><a href="receipe/SweetSourFish.html">Recipe</a></div>
+    </div>
+    <div class="nutrition">
+      <h3>Nutritional Value</h3>
+      <table class="center">
+        <tr>
+          <th>Calories</th>
+          <th>Protein</th>
+          <th>Carbs</th>
+          <th>Fats</th>
+        </tr>
+        <tr>
+          <td>216.42 kcal</td>
+          <td>16.84 g</td>
+          <td>25.71 g</td>
+          <td>5.28 g</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- The dots/circles -->
+<div class="circlecenter">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+<footer class="last">
+  <img src="foodimage/image_3.png" class="logo1" alt="Logo of Maggi Group">
+      <h2 class="Maggi">About Maggi</h2>
+      <br>
+      <p class="linking">Links<br><a href="facebook">facebook</a>&nbsp;<a href="instragram">instragram</a>&nbsp;<a href="index.html">Home</a>&nbsp;<a href="about.html">About Us</a>&nbsp;<a href="contact.html">Contact Us</a></p>
+      <img src="foodimage/Rectangle_7.png" class="socialmedia1" alt="Instagram Icon"><img src="foodimage/Rectangle_8.png" class="socialmedia2" alt="Facebook Icon">
+      <div class="container8">
+      <p>1884:Company originated in Switzerland;Julies Maggie took over his father's mill.</p>
+      <p>1886:Followed up with a ready-made soup based on legume meals</p>
+      <p>1897:Julius Maggi founded the company Maggi GmbH in Singen, Germany</p>
+      <p>1947:Maggi's holding company merged with th eNestle company to form Nestle-Alimentana S.A, currently known in its francophone home base as Nestle S.A</p>
+      </div>
+</footer>
+    
+    <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+  </body>
+</html>
